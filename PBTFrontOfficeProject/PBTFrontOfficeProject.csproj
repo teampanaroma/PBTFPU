@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4ACECBC-6A80-439B-AF29-91D6D6EAB1DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PBTFrontOfficeProject</RootNamespace>
+    <AssemblyName>PBTFrontOfficeProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SERVICES|AnyCPU' ">
+    <OutputPath>bin\CUSTOMER\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SERVICES|x86' ">
+    <OutputPath>bin\x86\CUSTOMER\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.Toolkit, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\dll\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStarter.cs" />
+    <Compile Include="Controls\DatePicker\BoolInverterConverter.cs" />
+    <Compile Include="Controls\DatePicker\PosDatePicker.xaml.cs">
+      <DependentUpon>PosDatePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PosBox.cs" />
+    <Compile Include="Controls\SplashScreen\DispatcherHelper.cs" />
+    <Compile Include="Controls\SplashScreen\MessageListener.cs" />
+    <Compile Include="Controls\SplashScreen\Splasher.cs" />
+    <Compile Include="Controls\SplashScreen\SplashScreen.xaml.cs">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DinamikImageButton.cs" />
+    <Compile Include="Service\AppService.cs" />
+    <Compile Include="Service\DateTimeControl.xaml.cs">
+      <DependentUpon>DateTimeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service\EnumContentScreen.cs" />
+    <Compile Include="Service\EnumScreen.cs" />
+    <Compile Include="Service\FpuService.cs" />
+    <Compile Include="Service\MenuContentService.cs" />
+    <Compile Include="ViewModels\FooterViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\DepartmentsProgramViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\FCurrencyProgramViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\OtherPaymentProgramVewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\PaymentTypesProgramViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\ProgramsMenuViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\ReceiptEndMessageProgramViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\ReceiptHeadMessageProgramViewModel.cs" />
+    <Compile Include="Service\MenuService.cs" />
+    <Compile Include="Service\ScreenKeyboard.xaml.cs">
+      <DependentUpon>ScreenKeyboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service\UIMessage.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ProgramsViewsModels\TaxIdProgramViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\CashInOutViewModel.cs" />
+    <Compile Include="ViewModels\DelegateCommand.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\CashOutViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EJMenuViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuDonemselBelgeViewModels\PeriodicReceiptEJReportsViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuDonemselBelgeViewModels\ReadEJTwoDateTwoTimeViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuDonemselBelgeViewModels\ReadEJTwoZTwoReceiptViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuTekBelgeViewModels\ReadEJDateAndTimeViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuTekBelgeViewModels\ReadEJDateTimeAndReceiptNumberViewModel.cs" />
+    <Compile Include="ViewModels\EntryOptionsViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuTekBelgeViewModels\ZAndReceiptNumberViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\FmReportMenuViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\FmReportViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\ReadEJZDetailViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\ReportsMenuViewModel.cs" />
+    <Compile Include="ViewModels\ReportsViewsModels\EkuTekBelgeViewModels\SingleReceiptEJReportsViewModel.cs" />
+    <Compile Include="Views\FooterView.xaml.cs">
+      <DependentUpon>FooterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\DepartmentsProgramView.xaml.cs">
+      <DependentUpon>DepartmentsProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\EmptyView.xaml.cs">
+      <DependentUpon>EmptyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\FCurrencyProgramView.xaml.cs">
+      <DependentUpon>FCurrencyProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\OtherPaymentProgramVew.xaml.cs">
+      <DependentUpon>OtherPaymentProgramVew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\PaymentTypesProgramView.xaml.cs">
+      <DependentUpon>PaymentTypesProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\ReceiptEndMessageProgramView.xaml.cs">
+      <DependentUpon>ReceiptEndMessageProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\ReceiptHeadMessageProgramView.xaml.cs">
+      <DependentUpon>ReceiptHeadMessageProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\PContentViews\TaxIdProgramView.xaml.cs">
+      <DependentUpon>TaxIdProgramView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramsViews\ProgramsMenuView.xaml.cs">
+      <DependentUpon>ProgramsMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\CashInOutView.xaml.cs">
+      <DependentUpon>CashInOutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\CashOutView.xaml.cs">
+      <DependentUpon>CashOutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EJMenuView.xaml.cs">
+      <DependentUpon>EJMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\PeriodicReceiptEJReportsView.xaml.cs">
+      <DependentUpon>PeriodicReceiptEJReportsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\ReadEJTwoDateTwoTimeView.xaml.cs">
+      <DependentUpon>ReadEJTwoDateTwoTimeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\ReadEJTwoZTwoReceiptView.xaml.cs">
+      <DependentUpon>ReadEJTwoZTwoReceiptView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ReadEJDateTimeAndReceiptNumberView.xaml.cs">
+      <DependentUpon>ReadEJDateTimeAndReceiptNumberView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\FmReportMenuView.xaml.cs">
+      <DependentUpon>FmReportMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\FmReportView.xaml.cs">
+      <DependentUpon>FmReportView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ReadEJDateAndTimeView.xaml.cs">
+      <DependentUpon>ReadEJDateAndTimeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\ReadEJZDetailView.xaml.cs">
+      <DependentUpon>ReadEJZDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\SingleReceiptEJReportsView.xaml.cs">
+      <DependentUpon>SingleReceiptEJReportsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ZAndReceiptNumberView.xaml.cs">
+      <DependentUpon>ZAndReceiptNumberView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EntryOptionsView.xaml.cs">
+      <DependentUpon>EntryOptionsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ContentViews\ReportEmptyView.xaml.cs">
+      <DependentUpon>ReportEmptyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsViews\ReportsMenuView.xaml.cs">
+      <DependentUpon>ReportsMenuView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\DatePicker\PosDatePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SplashScreen\SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ComboboxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\OkButtonDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="FPU\FPUFuctions.cs" />
+    <Compile Include="FPU\FPUResult.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\EkranKlavyesiDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\GroupBoxDic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\InnerButtonDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\MenuDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Service\DateTimeControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Service\ScreenKeyboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FooterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\DepartmentsProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\EmptyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\FCurrencyProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\OtherPaymentProgramVew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\PaymentTypesProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\ReceiptEndMessageProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\ReceiptHeadMessageProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\PContentViews\TaxIdProgramView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProgramsViews\ProgramsMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\CashInOutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\CashOutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EJMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\PeriodicReceiptEJReportsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\ReadEJTwoDateTwoTimeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuDonemselBelgeViews\ReadEJTwoZTwoReceiptView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ReadEJDateTimeAndReceiptNumberView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\FmReportMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\FmReportView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ReadEJDateAndTimeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\ReadEJZDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\SingleReceiptEJReportsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\EkuTekBelgeViews\ZAndReceiptNumberView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EntryOptionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ContentViews\ReportEmptyView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportsViews\ReportsMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\ReportsViews\MenuName.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\ProgramsViews\ProgramsMenuName.xml">
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\keyboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\PanaromaIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Panaroma.FPU\Panaroma.FPU.csproj">
+      <Project>{f6b656d5-e945-45de-a166-e2453b2a032a}</Project>
+      <Name>Panaroma.FPU</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

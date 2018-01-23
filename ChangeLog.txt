@@ -1,0 +1,2 @@
+WriteToDisplay fonksiyonundaki taþma problemi fixlendi
+1453 hatasý errorcode listesine alýndý

@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="PBTFrontOfficeProject.Views.FooterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:pnrbt="clr-namespace:PBTFrontOfficeProject.Resources"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary  Source="/PBTFrontOfficeProject;component/Resources\MenuDictionary.xaml"/>
+                <ResourceDictionary  Source="/PBTFrontOfficeProject;component/Resources\OkButtonDic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Column="0" Style="{StaticResource OkDic}" Content="KLAVYE" Command="{Binding ScreenKeyBoardCommand}">
+        </Button>
+        <Image Grid.Column="1" MaxWidth="50" MaxHeight="50" Source="/PBTFrontOfficeProject;component/Resources/Images\PanaromaIcon.ico" HorizontalAlignment="Center" Name="img1" Stretch="Fill"></Image>
+        <Button VerticalAlignment="Stretch" Grid.Column="2" Style="{StaticResource OkDic}" Background="Red" Foreground="White" HorizontalAlignment="Right" Content="ÇIKIŞ" Command="{Binding ExitCommand}">
+        </Button>
+    </Grid>
+</UserControl>

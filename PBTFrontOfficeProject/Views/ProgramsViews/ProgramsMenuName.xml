@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <PIslemlerMenu>
+    <!--<Button>
+      <Rotation>-40</Rotation>
+      <Width>200</Width>
+      <Content>EKÜ İŞLEMLERİ</Content>
+      <Tag>ejOperations</Tag>
+      <Background>Green</Background>
+    </Button>
+    <Button>
+      <Rotation>-30</Rotation>
+      <Width>200</Width>
+      <Content>ÇIKIŞ İŞLEMLERİ</Content>
+      <Background>Gray</Background>
+    </Button>
+    <Button>
+      <Rotation>-20</Rotation>
+      <Width>200</Width>
+      <Content>GİRİŞ İŞLEMLERİ</Content>
+      <Background>Azure</Background>
+    </Button>
+    <Button>
+      <Rotation>-10</Rotation>
+      <Width>200</Width>
+      <Content>EKÜ İŞLEMLERİ</Content>
+      <Background>DarkRed</Background>
+      <Tag>ejOperations</Tag>
+    </Button>-->
+  
+    <Button>
+      <Rotation>0</Rotation>
+      <Width>200</Width>
+      <Content>ÖDEME TİPLERİ PROGRAMLAMA</Content>
+      <Background>Orange</Background>
+      <Tag>paymentTypeProgram</Tag>
+    </Button>
+    <Button>
+      <Rotation>10</Rotation>
+      <Width>200</Width>
+      <Content>FİŞ SONU PROGRAMLAMA</Content>
+      <Background>Yellow</Background>
+      <Tag>receiptEndProgram</Tag>
+    </Button>
+    <Button>
+      <Rotation>20</Rotation>
+      <Width>200</Width>
+      <Content>FİŞ BAŞLIĞI PROGRAMLAMA</Content>
+      <Background>Red</Background>
+      <Tag>receiptHeadProgram</Tag>
+    </Button>
+    <Button>
+      <Rotation>30</Rotation>
+      <Width>200</Width>
+      <Content>DEPARTMAN PROGRAMLAMA</Content>
+      <Background>Blue</Background>
+      <Tag>depProgram</Tag>
+    </Button>
+    <Button>
+      <Rotation>40</Rotation>
+      <Width>200</Width>
+      <Content>KDV PROGRAMLAMA</Content>
+      <Background>Black</Background>
+      <Focusable>False</Focusable>
+      <Tag>taxIdProgram</Tag>
+    </Button>
+  </PIslemlerMenu>
+</Data>

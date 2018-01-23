@@ -1,0 +1,18 @@
+﻿<Window x:Class="PBTFrontOfficeProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:PBTFrontOfficeProject.Views" Closing="Window_Closing"  GotKeyboardFocus="Window_GotKeyboardFocus"  PreviewKeyDown="Window_PreviewKeyDown"
+        Title="MainWindow" Closed="Window_Closed" >
+    <Window.Background>
+        <LinearGradientBrush  EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFB75C5C" Offset="0"/>
+            <GradientStop Color="#FFDBABAB" Offset="0.2"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Focusable="False">
+        
+        <view:MainView Focusable="False"/>
+        <!--<view:ReportsMenuView/>-->
+    </Grid>
+
+</Window>

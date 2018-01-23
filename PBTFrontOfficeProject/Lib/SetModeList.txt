@@ -1,0 +1,19 @@
+Set SetMode Password
+Set Message
+Foreign currency setting
+vat rate
+Other Payment Set/Read 
+Departments&Groups
+Read All Department
+Set Clerk Message
+Set Machine Number
+Print Z Report
+Read FM Report
+TMS Upgrade_SetMode
+Print Parameter
+Print TSM Ip Settings
+Connection Test menu
+Read DATE-TIME
+EFT Pos Option
+DAILY REPORT SKIP ZERO
+LogOut Set Mode

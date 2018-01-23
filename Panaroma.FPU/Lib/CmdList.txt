@@ -1,0 +1,29 @@
+Login Set Mode
+Sale Function
+HOLD &Recall Receipt
+Print invoice by hand
+Print data in Invoicereceipt
+E-Invoice
+E-Archive
+Printing second copy receipt
+Print car park information slip
+Non Fiscal Receipt
+Print X Report
+Last Fiscal Entry
+Information on the last or current receipt
+Fiscal Free Number
+Change Ecr Mode
+Cash in/out
+Open Drawer
+Register Event
+X/Z PLU Report
+Set Report Information
+Restaurant check
+EFT POS Function of copy
+EFT POS Fun
+EFT POS OtherFun
+finalizing receipt
+Test Master Cmd
+Get Mac Message
+Print payment of invoice information slip
+Print advance payment information slip

@@ -1,0 +1,47 @@
+//Byte 0: General purpose
+#define B0_Reserved         (1<<7)   //Reserved - always 1.
+#define BO_SicNotFind       (1<<6)
+#define BO_KeyLost          (1<<5)
+#define B0_CoverOpen        (1<<4)   //Cover is open
+#define B0_FMMiss           (1<<3)
+#define B0_CmdInvalid       (1<<2)   //	#	Code of incoming command is invalid
+#define B0_DataSyntaxError  (1<<1)   //#	Incoming data has syntax error
+#define B0_GeneralError     (1<<0)   //General error - OR of all errors marked with '#'
+
+
+//Byte 1: General purpose
+#define B1_Reserved  (1<<7)                                                 //Reserved - always 1.
+#define B1_FMFull           (1<<6)     //*	Fiscal memory is fully engaged.
+#define B1_Not60EntryFM     (1<<5)     //If there is space for not more than 60 entries in the FM.
+#define B1_EJNearFull       (1<<4)     //Electronic journal near end (less than 10 MB electronic journal free space)
+#define B1_EJFull           (1<<3)     //Electronic journal end (less than 1 MB electronic journal free space)
+#define B1_DailyMemFull     (1<<2)
+#define B1_BatteryLow       (1<<1)
+#define B1_RtcBatteryLow    (1<<0)   //Battery is low (the clock for real time is in the RESET condition)
+
+//Byte 2: FP.gstr_errStatus.errCode
+//Byte 3: FP.gstr_ecrStatus.errCode
+
+//Byte 4: Fiscal memory
+#define B4_Reserved         (1<<7)     //Reserved - always 1
+#define B4_FiscalMode       (1<<6)     //If the printer is in fiscal mode
+#define B4_UserMode         (1<<5)
+#define B4_NonFisRcptOpen   (1<<4)   //If a non-fiscal receipt has been opened
+#define B4_FiscalRcptOpen   (1<<3)   //A fiscal receipt has been opened
+//also be set and the command will not cause changes to data in the printer.
+#define B4_TaxNotSet        (1<<2)
+#define B4_TinOrNinNotSet   (1<<1)     //VAT registration number set
+#define B4_FisCodNumNotSet  (1<<0)     //Individual printer number and FM number set
+
+
+//Byte 5: Fiscal memory
+#define B5_Reserved         (1<<7)     //Reserved - always 1
+#define B5_InServiceMode    (1<<6)
+#define B5_PreServiceMode   (1<<5)
+#define B5_LastZReportNotOK (1<<4)     //* 	Last fiscal closure not OK
+#define B5_TsmParaErr       (1<<3)
+#define B5_EventFileErr     (1<<2)
+#define B5_DailyMemErr      (1<<1)
+#define B5_FMError          (1<<0)     //*	When there is an error during entry in the fiscal memory
+
+

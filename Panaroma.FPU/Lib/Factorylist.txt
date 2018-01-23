@@ -1,0 +1,26 @@
+Version Test
+Test Sd Card
+Format Sd Card
+Unlock Sd Card
+Lock Sd Card
+Upgrade Sic
+Set App verify Mode
+Restore Apps Data
+Clear All Data
+Z Report Time Limit
+Set Ej Full Capacity
+Set Fm Full Capacity
+Set FM generate Days
+Set EJ generate Lines
+Set entrance interface time
+RMP Menu
+SEND INFO TO RAD
+Set ECR Active
+RMP EXTERNAL HARDWATE
+ExternalHardWare Msg
+EFT POS Debug
+RMP Register
+Machine SerialNo
+USB Host Test
+Fix Fm Belong To Another
+Set/Read Event FullNum

@@ -1,0 +1,215 @@
+ErrorCode	Description 
+E000	Refuse this function
+E001	Refuse this function
+E002	Clerk not yet login or login error
+E003	There are some wrong char in the Data
+E004	Clerk No. invalid
+E005	Quantity input error
+E006	Incoming data has syntax error
+E007	Prohibit discount
+E008	Prohibit +%
+E009	Prohibit -%
+E010	Prohibit void 	
+E011	Press Price key invalid
+E012	Press FC key invalid
+E013	Prohibit to press EC key
+E014	Prohibit to press cash key
+E015	Prohibit to press credit key
+E016	Prohibit to press check key
+E017	Please clear account
+E018	Password error
+E019	set time error
+E020	Input barcode Error 	
+E021	Input date error
+E022	Daily memory open error
+E023	Packet no. error    	
+E024	100 PLU at 1 receipt at most
+E025	No hardware reset
+E026	Now in user mode
+E027	You have already printed today!
+E028	ECR can't be setted recovery data when Z count isn't equal 0
+E029	Password error
+E030	DClear daily report error  	
+E031	Tax index error
+E032	Input data error
+E033	Total amount error
+E034	FP checksum error
+E035	Invalid weight
+E036	ECR is on sale
+E037	Cash in drawer overflows
+E038	Print event log index error
+E039	Cash in drawer is not enough
+E040	R/A Amount overflows 	
+E041	P/O Amount overflows
+E042	PLU is not found
+E043	Sale price invalid
+E044	Item total error
+E045	PLU report overflows
+E046	Fiscal code len error
+E047	Fiscal code & num error
+E048	Fiscal number error
+E049	Fiscal code & number have been setted
+E050	PIN code & number have been set 	
+E051	Tax number error
+E052	Now in invoice mode
+E053	No Tax
+E054	Error Department number
+E055	Sale Receipt full
+E056	Fiscal code or number error
+E057	Fiscalization is Failed, Please Set Date/Time
+E058	write fiscal memory error (in Z report)
+E059	ECR is not in Fiscal mode
+E060	PLU Can not return  	
+E061	Error Group ID
+E062	Printer No paper
+E063	Printer 1 No paper
+E064	Printer 2 No paper
+E065	Find No relative data
+E066	Now in fiscal mode
+E067	Pay Credit error
+E068	HARDWARE RESET ERROR
+E069	RecycleFlag=1 but no match record in recycle table
+E070	no set TIN or NIN  	
+E071	NTP disconnected over 60 days
+E072	Electronic journal exchange
+E073	No set fis code & num
+E074	ECR can''t download program
+E075	Member Card input error
+E076	Machine number isn't setted
+E077	ECR not in fiscal mode
+E078	Head message are not setted ok
+E079	No FM or address or data bus short
+E080	ECR ram checksum error  	
+E081	Separate pay error
+E082	SERIAL FLASH ERROR
+E083	Please clear PLU report
+E084	TIN and NIN are not setted
+E086	Z report is over 4 times in one day
+E087	Low battery or short-circuit for RAM
+E088	press [SAVE] error
+E089	press [RECALL] error
+E090	Insufficient stock 	
+E091	Non fiscal or fiscal receipt already open
+E092	SD Card verify error
+E093	SD Card out or bad
+E094	SDS ACK timeout
+E095	Lock SD card error
+E096	Unlock SD card error
+E097	No Further Invalid Login Allowed
+E098	price dot isn't setted ok when ECR is entered fiscal mode
+E099	fiscal logo isn't setted ok when ECR is entered fiscal mode
+E100	Fiscal mode flag error in FM 	
+E101	ECR isn't in user or fiscal mode
+E102	EJournal is full, end approve first and then change it
+E103	SD with old files
+E104	EJournal not approve yet, please start it
+E105	EJournal end approve aleady, please change it	
+E106	DPC is nearly full
+E107	EJournal can't find the object that meet the condition
+E108	Old EJournal can be read only
+E109	EJournal isn't inserted in or invalid card   	
+E110	EJournal is nearly full
+E111	EJournal is broken, could end approve only
+E112	SD CARD ERROR
+E113	ECR date earlier than Jan 1,2008
+E114	Current time earlier than last EJ time, please adjust date and time
+E115	DPC is full
+E116	EJournal approve aleady
+E117	Other ECR EJournal, please insert correct one
+E118	Current EJournal not ended yet, please end it first
+E119	Protocol Error
+E120	ONE EJ COPY IS BROKEN!	
+E121	EJ Data is Incorrect!
+E122	EJ communication error
+E123	Please print Z report before end EJ module
+E124	Please clear EJ module No. record
+E125	No capacity, end EJ module
+E126	Buffer data error, can be erase only    	
+E127	EJournal has not uploaded
+E128	only daily can print
+E131	Daily Memory Write Error
+E132	Daily Memory Read Error
+E133	Device error
+E134	SD card error
+E135	NTP connect error
+E136	Recovery data is setted
+E137	Only can in service mode
+E138	Daily Memory is full
+E139	SYSTEM TIME behind the date/time of last fiscal operation
+E151	FISCAL MEMORY BELONGS TO ANOTHER DEVICE
+E152	PSAM CARD BELONGS TO ANOTHER DEVICE
+E153	PSAM CARD OR FISCAL MEMORY NOT BELONGS THIS DEVICE
+E202	Fiscal memory integrity control error
+E203	Fiscal memory communication error   	
+E204	Fiscal Software Integrity Check is Failed
+E205	Fiscal memory is full
+E208	Software Update is Failed
+E209	Ethernet Communication Module does not work
+E210	GPRS Module cannot be communicated
+E211	GPRS Module cannot communicate with SIM Card
+E212	GPRS APN Error
+E213	GPRS SIM PIN Error
+E216	Event Log File Deleted
+E217	Event Log File Changed
+E218	Fiscal Software Parameters are Changed in an Uncontrolled Manner
+E219	Sales Database are Deleted
+E220	FM Disconnected
+E221	Not to Get Parameter
+E301	Fiscal memory is changed
+E302	Fiscal memory reading error
+E303	Fiscal memory writing error    	
+E304	Fiscal memory belongs to other register
+E306	Device Cabinet is Opened in Uncontrolled Manner
+E307	Daily Memory is deleted
+E308	Daily memory integrity control could not be made
+E309	Fiscal Applications do not Work
+E310	Fiscal Software is Deleted
+E314	Device Operating System Self-Check Error
+E315	Device Secure Processor Communication Error
+E316	GPRS SIM PIN is blocked
+E317	SAM Slot cannot be Read
+E318	Fiscal Application Integrity Control is not Provided
+E319	Certificate Validation Error
+E320	Need into Smode First
+E321	Need to Exit Service Mode First
+E400	Database insert error
+E401	Database update error
+E402	Database delete error    	
+E403	Database read error
+E404	device loop check error
+E501	ERR_KEYFUN 
+E601	S MODE VERIFY CODE ERROR
+E602	S MODE CREATE ID CODE FAILED    	
+E603	NOT PRINT EVENTLOG
+E604	SIC Communication failed
+E605	SIC KEY LOST
+E606	Cap Open Lost
+E607	SD Card Change
+E608	Security IC Cap is open
+E609	Now in Smode
+E610	NTP TIME OUT OF RANGE
+E611	NTP SYNC FAILED 
+E612	Event Log Full
+E613	In Block Mode
+E614	NTP CONNECT FAILED OVER 45 DAYS
+E615	Not Connect TSM
+E700	ERR_EFTPOS_RETRY_AGAIN
+E701	ERR_EFTPOS_COMMUNICATION
+E702	Connection failed
+E703	End of day must be executed
+E704	End of day error
+E705	Terminal keys must be installed
+E706	Terminal must be installed
+E707	Terminal key exchange must be executed
+E708	Terminal parameter/remote installation not installed
+E709	Transaction not available in batch
+E710	Transaction could not save in batch
+E711	Transaction exists in batch but copy slip can not be obtained
+E712	Interrupted by user
+E713	Acauier ID is not existed
+E714	End of transaction By EftPos
+E715	Get response failure
+E716	Batch is empty
+E717	User Timeout
+E718	Wrong value in message
+E719	Wrong message

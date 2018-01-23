@@ -1,0 +1,24 @@
+Set Protocol
+SmodeVerify
+;Read DailyMemory
+Date AND TIME
+Fiscal Code and Number
+TIN and NIN Number
+Fiscalization
+Enter UserMode
+WRTIE RECOVERY DATA
+ECR RESET
+EVENT LOG
+ReadFMBlock
+Change Interd SD Card
+Upgrade App
+NET SETTING
+GPRS SETTING
+PSTN SETTING
+FIREWALL
+Cancel Receipt in Smode
+Print Parameter
+Set RMP PARAM
+Set TSM PARAM
+TMS Upgrade
+Set Latitude&Longtitude

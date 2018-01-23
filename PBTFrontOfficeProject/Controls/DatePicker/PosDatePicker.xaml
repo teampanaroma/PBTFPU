@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="PBTFrontOfficeProject.Controls.DatePicker.PosDatePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:PD="clr-namespace:PBTFrontOfficeProject.Controls.DatePicker"
+             xmlns:xceed="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="IconButton" TargetType="{x:Type ToggleButton}">
+            <Border>
+                <ContentPresenter />
+            </Border>
+
+        </ControlTemplate>
+
+        <PD:BoolInverterConverter x:Key="BoolInverterConverter" />
+
+    </UserControl.Resources>
+
+    <StackPanel Height="36" Orientation="Horizontal">
+        <TextBox x:Name="DateDisplay" VerticalContentAlignment="Center" 
+                     Margin="0,0,0,0"  
+                     MinHeight="{Binding ElementName=PopUpCalendarButton, Path=ActualHeight}" 
+                 Height="36" Width="144" FontSize="15" FontWeight="Bold" 
+                 BorderThickness="2" 
+                 GotFocus="DateDisplay_GotFocus" 
+                 PreviewMouseUp="DateDisplay_PreviewMouseUp" 
+                 LostFocus="DateDisplay_LostFocus"
+                 TextChanged="DateDisplay_TextChanged" 
+                 PreviewKeyDown="DateDisplay_PreviewKeyDown_1"
+                 FontFamily="Tahoma">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#FFEB9A9A" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <ToggleButton Focusable="False" Template="{StaticResource IconButton}" 
+                      MaxHeight="50" 
+                      Margin="-1,0,0,0" 
+                      Name="PopUpCalendarButton" 
+                      IsChecked="False"
+                      IsHitTestVisible="{Binding ElementName=CalendarPopup, Path=IsOpen, Mode=OneWay, Converter={StaticResource BoolInverterConverter}}">
+
+            <Image MouseDown="PopUpCalendarButton_MouseDown_1"  Source="calendar.png" Stretch="fill" HorizontalAlignment="Left" Width="40" />
+        </ToggleButton>
+        <Popup Height="auto" Width="auto" IsOpen="{Binding Path=IsChecked, ElementName=PopUpCalendarButton}" 
+               x:Name="CalendarPopup" Margin="0,0,0,0"
+               PopupAnimation="Fade" MouseLeave="CalendarPopup_MouseLeave_1"
+               StaysOpen="False" AllowsTransparency="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Calendar Margin="0,0,0,0"
+                      x:Name="CalDisplay" BorderThickness="3" SelectedDatesChanged="CalDisplay_SelectedDatesChanged">
+                    <Calendar.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE9F3F8" Offset="0.032" />
+                            <GradientStop Color="#FFCAE4F2" Offset="1" />
+                        </LinearGradientBrush>
+                    </Calendar.Background>
+                    <Calendar.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFF54D3F" Offset="0" />
+                            <GradientStop Color="#FFEBE2E3" Offset="1" />
+                        </LinearGradientBrush>
+                    </Calendar.BorderBrush>
+                </Calendar>
+                <xceed:TimePicker IsOpen="False" Format="ShortTime" Grid.Row="1" x:Name="TimeDisplay" AllowSpin="True" HorizontalContentAlignment="Right">
+                    <xceed:TimePicker.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE9F3F8" Offset="0.032" />
+                            <GradientStop Color="#FFCAE4F2" Offset="1" />
+                        </LinearGradientBrush>
+                    </xceed:TimePicker.Background>
+                </xceed:TimePicker>
+            </Grid>
+        </Popup>
+    </StackPanel>
+</UserControl>

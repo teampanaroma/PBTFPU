@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <IslemlerMenu>
+    <!--<Button>
+      <Rotation>-40</Rotation>
+      <Width>200</Width>
+      <Content>EKÜ İŞLEMLERİ</Content>
+      <Tag>ejOperations</Tag>
+      <Background>Green</Background>
+    </Button>
+    <Button>
+      <Rotation>-30</Rotation>
+      <Width>200</Width>
+      <Content>ÇIKIŞ İŞLEMLERİ</Content>
+      <Background>Gray</Background>
+    </Button>
+    <Button>
+      <Rotation>-20</Rotation>
+      <Width>200</Width>
+      <Content>GİRİŞ İŞLEMLERİ</Content>
+      <Background>Azure</Background>
+    </Button>-->
+    <Button>
+      <Rotation>-10</Rotation>
+      <Width>200</Width>
+      <Content>EKÜ İŞLEMLERİ</Content>
+      <Background>DarkRed</Background>
+      <Tag>ejOperations</Tag>
+    </Button>
+  
+    <Button>
+      <Rotation>0</Rotation>
+      <Width>200</Width>
+      <Content>MALİ HAFIZA RAPORU</Content>
+      <Background>Orange</Background>
+      <Tag>fmReport</Tag>
+    </Button>
+    <Button>
+      <Rotation>10</Rotation>
+      <Width>200</Width>
+      <Content>KASA ÇIKIŞ</Content>
+      <Background>Yellow</Background>
+      <Tag>cashOut</Tag>
+    </Button>
+    <Button>
+      <Rotation>20</Rotation>
+      <Width>200</Width>
+      <Content>KASA GİRİŞ</Content>
+      <Background>Red</Background>
+      <Tag>cashIn</Tag>
+    </Button>
+    <Button>
+      <Rotation>30</Rotation>
+      <Width>200</Width>
+      <Content>Z RAPORU</Content>
+      <Background>Blue</Background>
+      <Tag>zReport</Tag>
+    </Button>
+    <Button>
+      <Rotation>40</Rotation>
+      <Width>200</Width>
+      <Content>X RAPORU</Content>
+      <Background>Black</Background>
+      <Tag>xReport</Tag>
+    </Button>
+  </IslemlerMenu>
+</Data>
